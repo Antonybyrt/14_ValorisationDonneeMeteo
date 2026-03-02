@@ -26,7 +26,10 @@ const value = ref("Bar Chart");
             :description="heroData.description"
         />
         <USelect v-model="value" :items="items" />
+        <!-- conflit ici-->
         <Barchart v-if="value === `Bar Chart`" />
+        <!-- et ici-->
+         <!-- et ici-->
         <LineChart v-if="value === `Line Chart`" />
         <StationTable />
     </UContainer>
