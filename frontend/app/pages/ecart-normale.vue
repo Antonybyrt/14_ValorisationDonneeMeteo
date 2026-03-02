@@ -27,6 +27,7 @@ const value = ref("Bar Chart");
         />
         <USelect v-model="value" :items="items" />
         <Barchart v-if="value === `Bar Chart`" />
+        <!-- conflit ici-->
         <LineChart v-if="value === `Line Chart`" />
         <StationTable />
     </UContainer>
