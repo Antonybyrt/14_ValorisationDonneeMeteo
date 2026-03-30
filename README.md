@@ -1,3 +1,5 @@
+[![CI](https://github.com/Antonybyrt/14_ValorisationDonneeMeteo/actions/workflows/ci.yml/badge.svg)](https://github.com/Antonybyrt/14_ValorisationDonneeMeteo/actions/workflows/ci.yml)
+
 # Valorisation Donnée Météo
 
 Projet Data For Good - Saison 14

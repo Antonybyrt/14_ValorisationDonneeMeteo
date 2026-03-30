@@ -28,6 +28,7 @@ dev = [
     "ipython>=8.26.0",
     "django-extensions>=3.2.0",
     "factory-boy>=3.3.0",
+    "bandit[toml]>=1.7.0",
 ]
 
 notebooks = [
@@ -35,6 +36,11 @@ notebooks = [
     "matplotlib>=3.8",
     "jupyterlab>=4.0",
 ]
+
+[tool.bandit]
+targets = ["weather", "config"]
+skips = ["B101"]
+exclude_dirs = ["weather/tests", "weather/migrations"]
 
 [tool.ruff]
 target-version = "py311"
