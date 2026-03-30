@@ -1,4 +1,5 @@
 [![CI](https://github.com/Antonybyrt/14_ValorisationDonneeMeteo/actions/workflows/ci.yml/badge.svg)](https://github.com/Antonybyrt/14_ValorisationDonneeMeteo/actions/workflows/ci.yml)
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/Antonybyrt/14_ValorisationDonneeMeteo/badge)](https://scorecard.dev/viewer/?uri=github.com/Antonybyrt/14_ValorisationDonneeMeteo)
 
 # Valorisation Donnée Météo
 
