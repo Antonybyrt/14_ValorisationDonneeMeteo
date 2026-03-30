@@ -62,6 +62,6 @@ describe("insertCrossingPoints", () => {
         ];
         const result = insertCrossingPoints(series);
         // 3 original + 2 crossings = 5
-        expect(result).toHaveLength(99);
+        expect(result).toHaveLength(5);
     });
 });
