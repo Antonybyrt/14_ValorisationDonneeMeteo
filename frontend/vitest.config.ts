@@ -2,7 +2,7 @@ import { defineVitestConfig } from "@nuxt/test-utils/config";
 
 export default defineVitestConfig({
     test: {
-        environment: "nuxt",
+        environment: "happy-dom",
         reporters: ["verbose"],
         coverage: {
             provider: "v8",
