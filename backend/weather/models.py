@@ -4,9 +4,10 @@ Tables are managed by Django with TimescaleDB hypertables via custom migrations.
 """
 
 from django.db import models
+from django_prometheus.models import ExportModelOperationsMixin
 
 
-class Station(models.Model):
+class Station(ExportModelOperationsMixin("station"), models.Model):
     """Weather station metadata."""
 
     code = models.CharField(max_length=8, unique=True)
@@ -32,7 +33,7 @@ class Station(models.Model):
         return f"{self.nom} ({self.code})"
 
 
-class HoraireTempsReel(models.Model):
+class HoraireTempsReel(ExportModelOperationsMixin("horaire_temps_reel"), models.Model):
     """
     Real-time hourly weather measurements.
     TimescaleDB hypertable partitioned by validity_time.
@@ -101,7 +102,7 @@ class HoraireTempsReel(models.Model):
         return f"{self.station.code} @ {self.validity_time}"
 
 
-class Quotidienne(models.Model):
+class Quotidienne(ExportModelOperationsMixin("quotidienne"), models.Model):
     """
     Daily aggregated weather data.
     TimescaleDB hypertable partitioned by date.
